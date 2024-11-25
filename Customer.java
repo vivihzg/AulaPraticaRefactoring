@@ -21,8 +21,8 @@ public class Customer {
       return new TextStatement().value(this);
    }
 
-   public Enumeration getRentals() {
-	   return _rentals.elements();
+   public Enumeration<Rental> getRentals() {
+      return _rentals.elements();
    }
    
    public String htmlStatement() {
