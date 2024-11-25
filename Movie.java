@@ -45,4 +45,12 @@ public class Movie {
       }
       return thisAmount;
     }
+
+    public int getFrequentRenterPoints(int daysRented){
+         // add bonus for a two day new release rental
+      if ((_priceCode == Movie.NEW_RELEASE) && daysRented > 1) {
+        return 2;
+      }
+      return 1;
+    }
 }
